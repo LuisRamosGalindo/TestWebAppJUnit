@@ -5,7 +5,7 @@ pipeline {
             steps {
 		sh 'export PATH=/opt/apache-maven-3.6.2/bin:$PATH'
                 sh 'mvn --version'
-		sh 'cd ~/workspace/Spring/JqueryDemo'
+		sh 'cd /home/luisramos/workspace/Spring/JqueryDemo'
 		sh './mvnw clean package'
                 sh './mvnw spring-boot:run'
 		sh ''	
