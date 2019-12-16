@@ -5,8 +5,7 @@ pipeline {
             steps {
 		sh 'export PATH=/opt/apache-maven-3.6.2/bin:$PATH'
                 sh 'mvn --version'
-		sh './mvnw clean package'
-                sh './mvnw spring-boot:run'
+		sh 'mvn compiler:compile'                
 		sh ''	
             }
         }
