@@ -4,7 +4,8 @@ pipeline {
         stage('build') {
             steps {
 		sh 'export PATH=/opt/apache-maven-3.6.2/bin:$PATH'
-                sh 'mvn --version'		        		
+                sh 'mvn --version'	
+		sh 'mvn compiler:compile'    
             }
         }
     }
