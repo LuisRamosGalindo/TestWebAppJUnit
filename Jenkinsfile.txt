@@ -8,8 +8,7 @@ pipeline {
                 sh 'mvn --version'
 		sh 'cd workspace/Spring/JqueryDemo'
 		sh './mvnw clean package'
-                sh './mvnw spring-boot:run'
-		sh ''	
+                sh './mvnw spring-boot:run'			
             }
         }
     }
