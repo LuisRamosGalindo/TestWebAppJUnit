@@ -20,7 +20,7 @@ pipeline {
 	 stage('Image') {
 	     steps{		
 	  		   
-			   docker login -u  "rgalindoluis"  -p  "Pelusa1984$" docker.io
+		    sh	'docker login -u  rgalindoluis  -p  Pelusa1984$ docker.io'
 			
         	 
 		  }
