@@ -20,7 +20,7 @@ pipeline {
 	 stage('Image') {
 	     steps{		
 		    script{          		   
-			   docker login -u = 'rgalindoluis'  -p = 'Pelusa1984$' docker.io
+			   docker login -u  'rgalindoluis'  -p  'Pelusa1984$' docker.io
 			   docker build -t rgalindoluis/ibkappweb-docker:latest .
 			   docker push rgalindoluis/ibkappweb-docker:latest   
         	    }
