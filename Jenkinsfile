@@ -12,8 +12,7 @@ pipeline {
 	    
 	 stage('Image') {
 	     steps{		
-		   sh 'mkdir -p target/dependency && (cd target/dependency; jar -xf ../*.jar)'  
-		   sh 'docker build -t springio/gs-spring-boot-docker'
+		   sh ''
 		  }
 	    	}	
 	    
