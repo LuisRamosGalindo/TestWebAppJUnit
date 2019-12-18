@@ -20,7 +20,10 @@ pipeline {
 	 stage('Image') {
 	     steps{		
 		    script{
-          		   MyDocker.build registry + ":$BUILD_NUMBER"
+          		   //MyDocker.build registry + ":$BUILD_NUMBER"
+			   docker login --username rgalindoluis  --password Pelusa1984$   docker.io
+			   docker build -t rgalindoluis/ibkappweb-docker:latest .
+			   docker push rgalindoluis/ibkappweb-docker:latest   
         	    }
 		  }
 	    	}	
